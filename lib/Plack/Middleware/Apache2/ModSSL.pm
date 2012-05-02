@@ -1,9 +1,16 @@
 package Plack::Middleware::Apache2::ModSSL;
 
+use 5.010;
 use strict;
+
 use base qw(Plack::Middleware);
 use Apache2::ModSSL;
 use Plack::Util::Accessor qw(vars client_exts server_exts);
+
+BEGIN {
+	$Plack::Middleware::Apache2::ModSSL::AUTHORITY = 'cpan:TOBYINK';
+	$Plack::Middleware::Apache2::ModSSL::VERSION   = '0.001';
+}
 
 sub call
 {
@@ -65,6 +72,12 @@ It's incredibly unlikely you need this.
 
 An arrayref of OIDs which will be exported from the client's certificate.
 It's pretty unlikely you need this.
+
+=begin private
+
+=item call
+
+=end private
 
 =head1 BUGS
 
