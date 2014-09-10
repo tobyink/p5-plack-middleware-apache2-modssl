@@ -15,3 +15,10 @@ dist:v_0-001
 	:file-release   <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Plack-Middleware-Apache2-ModSSL-0.001.tar.gz> ;
 	rdfs:label      "Initial release" .
 
+
+`Plack-Middleware-Apache2-ModSSL 0.002 cpan:TOBYINK`
+	issued    2014-09-10;
+	changeset [
+		item "Switch to Dist::Inkt."^^Packaging;
+	].
+

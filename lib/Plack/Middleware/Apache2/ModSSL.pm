@@ -9,7 +9,7 @@ use Plack::Util::Accessor qw(vars client_exts server_exts);
 
 BEGIN {
 	$Plack::Middleware::Apache2::ModSSL::AUTHORITY = 'cpan:TOBYINK';
-	$Plack::Middleware::Apache2::ModSSL::VERSION   = '0.001';
+	$Plack::Middleware::Apache2::ModSSL::VERSION   = '0.002';
 }
 
 sub call
