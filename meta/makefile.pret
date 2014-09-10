@@ -1,0 +1,9 @@
+@prefix deps:  <http://ontologi.es/doap-deps#> .
+
+<http://purl.org/NET/cpan-uri/dist/Plack-Middleware-Apache2-ModSSL/project>
+	deps:runtime-requirement         [ deps:on "strict"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "base"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "Plack"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "Apache2::ModSSL"^^deps:CpanId ];
+	deps:test-requirement            [ deps:on "Test::More 0.61"^^deps:CpanId ].
+
